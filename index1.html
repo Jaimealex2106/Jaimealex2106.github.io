@@ -1,0 +1,43 @@
+<!-- Este es un comentario -->
+<!--El documento es HTML5-->
+<!doctype html>
+<!--Marca el inicio del documento HTML-->
+<html>
+<!--Marca el inicio de la cabecera del documento-->
+<head>
+<!--Para que pueda mostrarse caracteres especiales-->
+  <meta charset="utf-8" />
+<!--Título de la página-->
+  <title>Método del Costo Mínimo</title>
+<!--Conexion con la hoja de estilos de css -->
+  <link rel="stylesheet" href="assets/styles1.css">
+</head>
+<!--Marca el inicio del cuerpo del documento-->
+<body>
+<!--Encabezado principal -->
+  <h1>Método del Costo Mínimo</h1>
+<!--Parrafo introductorio -->
+  <p>Introduce los datos de tu problema de transporte:</p>
+  <input id="filas" type="number" placeholder="Número de filas" min="1" max="10">
+  <input id="columnas" type="number" placeholder="Número de columnas" min="1" max="10">
+  <br><br>
+<!--Boton para generar la tabla con el parametro id= identificador -->
+  <button id="generarTabla">Generar Tabla</button>
+  <button id="limpiar">Limpiar Todo</button>
+  <br><br>
+<!--Contenedor de la tabla generada -->
+  <div id="contenedorTabla"></div>
+<br><br>
+
+<!--Salto de linea-->
+  <br><br>
+<!--Boton para calcular con el parametro id= identificador -->
+  <button id="calcular">Calcular</button>
+<!--titulo secundario -->
+  <h2>Resultado:</h2>
+
+  <div id="resultado" style="border: 1px solid #ddd; padding: 15px; border-radius: 5px;"></div>
+<!--Conexion con el archivo de javascript para el metodo del costo minimo -->
+  <script src="js/costoMinimo1.js"></script>
+</body>
+</html>
